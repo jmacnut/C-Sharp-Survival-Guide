@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Cube
   - Enemy
+  - FullTimeEmployee
+  - PartTimeEmployee
   layers:
   - Default
   - TransparentFX
