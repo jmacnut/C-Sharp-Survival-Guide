@@ -19,25 +19,30 @@ namespace SelectDifficlutyEnumSpace
             Expert = 66      // default is 3
         }
 
-        [SerializeField] private LevelSelector currentLevel;
+        [SerializeField] private LevelSelector _currentLevel;
+
+        private void Awake()
+        {
+            _currentLevel = 0;   // default level
+        }
 
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                switch (currentLevel)
+                switch (_currentLevel)
                 {
                     case LevelSelector.Easy:
-                        Debug.Log("Selected Level: " + currentLevel.ToString());
+                        Debug.Log("Selected Level: " + _currentLevel.ToString());
                         break;
                     case LevelSelector.Normal:
-                        Debug.Log("Selected Level: " + currentLevel.ToString());
+                        Debug.Log("Selected Level: " + _currentLevel.ToString());
                         break;
                     case LevelSelector.Hard:
-                        Debug.Log("Selected Level: " + currentLevel.ToString());
+                        Debug.Log("Selected Level: " + _currentLevel.ToString());
                         break;
                     case LevelSelector.Expert:
-                        Debug.Log("Selected Level: " + currentLevel.ToString());
+                        Debug.Log("Selected Level: " + _currentLevel.ToString());
                         break;
                     default:
                         Debug.LogError("Selected Level: Invalid");

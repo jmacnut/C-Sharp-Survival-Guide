@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - FullTimeEmployee
   - PartTimeEmployee
+  - Sphere
   layers:
   - Default
   - TransparentFX
