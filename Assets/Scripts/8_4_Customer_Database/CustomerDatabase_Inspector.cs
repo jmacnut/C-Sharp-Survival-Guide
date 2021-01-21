@@ -8,12 +8,19 @@ namespace CustomerDatabase
     {
         [SerializeField] private Customer[] customerDatabase;
 
-        private void Start()
+        private void Awake()
         {
             foreach (var customer in customerDatabase)
             {
                 customer.PrintCustomer();
             }
+        }
+        private void Start()
+        {
+            //foreach (var customer in customerDatabase)
+            //{
+            //    customer.PrintCustomer();
+            //}
         }
 
     }

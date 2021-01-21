@@ -9,9 +9,16 @@ namespace FunctionMethods
         [SerializeField] private Vector3[] _positions;
         [SerializeField] private int _randomIndex;
 
+        //private void Awake()
+        //{
+        //    for (int i = 0; i < 5; i++)
+        //    {
+        //        _positions[i] = new Vector3(Random.Range(0, 5f), Random.Range(0, 5f), Random.Range(0, 5f));
+        //    }
+        //}
         void Start()
         {
-            for (int i=0; i<5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 _positions[i] = new Vector3(Random.Range(0, 5f), Random.Range(0, 5f), Random.Range(0, 5f));
             }
